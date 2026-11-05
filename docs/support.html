@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Match Drop — Support</title>
+<style>
+  :root{
+    --bg:#cfeaf6; --bg2:#b7e0ee; --panel:#f8fdff; --slot:#e9f6fa; --ink:#12304a; --muted:#4d6b80;
+    --accent:#ff8f3a; --onAccent:#12304a; --line:#9fc9da;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e2233; --bg2:#143049; --panel:#16354c; --slot:#10293b; --ink:#eaf6fb; --muted:#9bbccd;
+      --accent:#ffa24d; --onAccent:#12304a; --line:#2d5c7a;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Fredoka",ui-rounded,"Nunito",system-ui,sans-serif;
+    margin:0;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--ink);
+    min-height:100vh;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 80px;}
+  .card{background:var(--panel);border:3px solid var(--line);border-radius:22px;padding:28px 26px;}
+  h1{font-size:30px;margin:0 0 4px;font-weight:700;}
+  .updated{color:var(--muted);font-size:14px;margin-bottom:24px;}
+  h2{font-size:20px;margin-top:32px;color:var(--ink);font-weight:700;}
+  p,li{font-size:16px;line-height:1.6;}
+  .summary{background:var(--slot);border:2px solid var(--line);border-radius:16px;padding:16px 20px;margin:20px 0;}
+  code{background:var(--slot);padding:2px 8px;border-radius:6px;font-size:14px;border:1px solid var(--line);}
+  .pill{display:inline-block;background:var(--accent);color:var(--onAccent);font-weight:700;border-radius:999px;padding:4px 14px;font-size:13px;}
+  .faq{background:var(--slot);border:2px solid var(--line);border-radius:16px;padding:16px 20px;margin:14px 0;}
+  .faq h3{margin:0 0 6px;font-size:17px;}
+  .faq p{margin:0;}
+  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center;}
+  a{color:var(--ink);font-weight:700;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <span class="pill">Match Drop</span>
+    <h1>Support</h1>
+    <p class="updated">Last updated: November 5, 2026</p>
+
+    <div class="summary">
+      Need help, found a bug, or have feedback? Contact us at
+      <code>YOUR-EMAIL-HERE</code>.
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq">
+      <h3>How do I reset my progress?</h3>
+      <p>
+        Match Drop keeps your best score and preferences only on your own device, in local
+        storage — there's no account to delete. To reset everything, clear the app's data or
+        storage from your device's Settings app (under the app's own storage/usage settings),
+        or uninstall and reinstall Match Drop.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>How do I turn off sound and haptics?</h3>
+      <p>
+        Tap the speaker icon in the game's bottom toolbar to mute or unmute sound. Haptics
+        (vibration feedback) follows your device's system haptics/vibration setting — turn it
+        off from your device's own Settings if you'd prefer the game not to vibrate.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>How do I report a bug?</h3>
+      <p>
+        Email <code>YOUR-EMAIL-HERE</code> with a short description of what happened, what
+        level/screen you were on, and your device model and OS version if you know it. A
+        screenshot or screen recording helps a lot.
+      </p>
+    </div>
+
+    <p>See also our <a href="index.html">Privacy Policy</a>.</p>
+  </div>
+  <footer>Match Drop is a casual fruit-matching physics puzzle game.</footer>
+</div>
+</body>
+</html>
